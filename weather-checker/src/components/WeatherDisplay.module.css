@@ -1,9 +1,32 @@
 
+.container {
+  margin-top: 1rem;
+  padding: 1rem;
+}
+
+.heading {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+
+.infoContainer {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.leftInfo {
+  width: 20rem;
+}
+
+.rightInfo {
+  width: 20rem;
+}
 
 .info {
   display: flex;
   justify-content: space-between;
-  width: 15%;
   border-bottom: 1px solid black;
 }
 
