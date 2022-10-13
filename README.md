@@ -1,6 +1,6 @@
 Two Hour Projects
 
-Developed to revisit JS & Ract Fundamentals
+Developed to revisit JS & React Fundamentals
 
 -ToDoList
 
