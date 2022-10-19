@@ -1,9 +1,13 @@
 import React, { useState } from 'react';
-import Quiz from './routes/Quiz';
-import QuizDetails from './routes/QuizDetails';
+import Quiz from './components/Quiz';
+import QuizDetails from './components/QuizDetails';
 
+// App Component
+//    renders QuizDetails if quiz api hasn't been called
+//    renders Quiz when question data is recieved
+//
 function App() {
-  console.log('App')
+
   const [questions, setQuestions] = useState([])
 
   return (
@@ -13,7 +17,7 @@ function App() {
       </div>
       <div>
         {
-          questions.length === 0 ? <QuizDetails setQuestions={setQuestions}/> : <Quiz questions={questions} />
+          questions.length === 0 ? <QuizDetails setQuestions={setQuestions}/> : <Quiz setQuestions={setQuestions} questions={questions} />
         }
       </div>
     </>
